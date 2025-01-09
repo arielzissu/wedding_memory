@@ -43,7 +43,7 @@ and similarly to fix any linting issues automatically you can run
 ### `yarn lint:fix`
 
 
-TODOs List:
+TODO's List:
 1. Fetch assets from cloudinary with low quality of image/video
 2. Add download button for every image/video (next to the delete button) (download in high quality!)
 3. pagination
