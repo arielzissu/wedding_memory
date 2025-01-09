@@ -1,0 +1,74 @@
+{
+  "name": "memory-qr",
+  "author": "Ariel Zissu",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "16.20.2"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "yarn build && nodemon",
+    "dev": "concurrently \"npm run start-client\" \"npm run start-backend\"",
+    "start-client": "webpack serve --mode development",
+    "start-backend": "nodemon",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/material": "^6.1.10",
+    "@mui/styled-engine-sc": "^6.1.10",
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.7.8",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "google-auth-library": "^9.15.0",
+    "jwt-decode": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.13",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^16.7.1",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/webpack-dev-middleware": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^9.1.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "sass": "^1.38.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
+  }
+}
