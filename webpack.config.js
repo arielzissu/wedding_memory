@@ -8,6 +8,7 @@ dotenv.config();
 
 module.exports = {
   entry: './src/client/index.tsx',
+  mode: process.env.NODE_ENV || 'production',
   module: {
     rules: [
       {
@@ -28,7 +29,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/client/index.html',
       favicon: './src/client/favicon.ico',
-      title: "Wedding Memory",
+      title: 'Wedding Memory',
       description: "Web application for Ariel's web app"
     }),
     new CopyPlugin({
@@ -38,7 +39,10 @@ module.exports = {
       ]
     }),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env)
+      'process.env': JSON.stringify(process.env),
+      'process.env.REACT_APP_PROXY_URL': JSON.stringify(
+        process.env.REACT_APP_PROXY_URL
+      )
     })
   ],
   output: {
