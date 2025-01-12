@@ -1,0 +1,22 @@
+{
+  "builds": [
+    {
+      "src": "src/server/index.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "src/client/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/server/index.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/client/build/$1"
+    }
+  ]
+}
