@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "16.20.2"
+    "node": "18.19.1"
   },
   "scripts": {
     "build": "webpack --mode production",
@@ -55,7 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "babel-loader": "^8.2.2",
-    "concurrently": "^9.1.0",
+    "concurrently": "^9.1.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
@@ -68,8 +68,8 @@
     "ts-loader": "^9.2.5",
     "ts-node": "^10.2.1",
     "typescript": "^5.7.2",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^4.0.0"
   }
 }

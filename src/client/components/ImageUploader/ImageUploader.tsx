@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ResourceType } from 'cloudinary';
 import { Box, Button, Typography, CircularProgress } from '@mui/material';
-import { CloudUpload } from '@mui/icons-material';
+import CloudUpload from '@mui/icons-material/CloudUpload';
 import DeleteIcon from '@mui/icons-material/Delete';
 import {
   PreviewImage,

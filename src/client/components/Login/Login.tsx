@@ -1,6 +1,5 @@
-import React from 'react';
 import { jwtDecode, JwtPayload } from 'jwt-decode';
-import { Dialog, DialogTitle, DialogContent, Button, Box } from '@mui/material';
+import { Dialog, DialogTitle, DialogContent, Box } from '@mui/material';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import { saveToLocalStorage } from '../../utils/localStorage';
 

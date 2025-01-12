@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Box, CircularProgress } from '@mui/material';
 import { getImages } from '../../api/cloudinary';
 import { ICloudinaryFile } from '../../types';
