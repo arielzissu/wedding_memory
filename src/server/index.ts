@@ -11,7 +11,7 @@ const app: Application = express();
 
 app.use(
   PUBLIC_URL,
-  express.static(path.resolve(__dirname, '../../build'), { maxAge: '1y' })
+  express.static(path.resolve(__dirname, '../../public'), { maxAge: '1y' })
 );
 
 app.use(cors());
