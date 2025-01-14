@@ -43,7 +43,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'src/client/public'),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -51,7 +51,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   devServer: {
-    static: './public',
+    static: './src/client/public',
     compress: true,
     watchFiles: ['./src/client**'],
     hot: true,
