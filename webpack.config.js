@@ -51,7 +51,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   devServer: {
-    static: './src/client/public',
+    static: path.join(__dirname, 'src/client/public'),
     compress: true,
     watchFiles: ['./src/client**'],
     hot: true,
