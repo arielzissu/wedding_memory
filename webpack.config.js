@@ -39,10 +39,7 @@ module.exports = {
       ]
     }),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env),
-      'process.env.REACT_APP_PROXY_URL': JSON.stringify(
-        process.env.REACT_APP_PROXY_URL
-      )
+      'process.env': JSON.stringify(process.env)
     })
   ],
   output: {
@@ -54,7 +51,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   devServer: {
-    static: './build',
+    static: './public',
     compress: true,
     watchFiles: ['./src/client**'],
     hot: true,
