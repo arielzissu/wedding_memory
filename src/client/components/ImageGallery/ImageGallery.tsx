@@ -26,6 +26,7 @@ const ImageGallery = () => {
   };
 
   useEffect(() => {
+    fetchHello();
     fetchImages();
   }, []);
 

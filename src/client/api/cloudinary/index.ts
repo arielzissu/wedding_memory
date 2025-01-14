@@ -38,7 +38,10 @@ export const uploadImages = async (
   });
 };
 
-export const deleteImage = async (publicId: string, resourceType: ResourceType) => {
+export const deleteImage = async (
+  publicId: string,
+  resourceType: ResourceType
+) => {
   return await request({
     uri: `/cloudinary/image`,
     method: 'DELETE',
@@ -46,5 +49,12 @@ export const deleteImage = async (publicId: string, resourceType: ResourceType) 
       publicId,
       resourceType
     }
+  });
+};
+
+export const fetchHello = async () => {
+  return await request({
+    uri: `/cloudinary/hello`,
+    method: 'GET'
   });
 };
