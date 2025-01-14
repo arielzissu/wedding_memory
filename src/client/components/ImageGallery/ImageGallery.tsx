@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Box, CircularProgress } from '@mui/material';
-import { getImages } from '../../api/cloudinary';
+import { fetchHello, getImages } from '../../api/cloudinary';
 import { ICloudinaryFile } from '../../types';
 import { getUrlSearchParams } from '../../utils/navigation';
 import {
