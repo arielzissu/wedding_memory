@@ -6,8 +6,8 @@
       "node": "18"
     },
     "scripts": {
-      "build": "webpack --mode production",
-      "start": "webpack serve --mode development --port 3030",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
       "lint": "eslint . --ext .js,.ts,.tsx",
       "lint:fix": "eslint . --fix --ext .js,.ts,.tsx"
     },
