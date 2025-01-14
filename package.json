@@ -7,7 +7,7 @@
     "node": "18"
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "node public/bundle.js",
     "dev": "concurrently \"npm run start-client\" \"npm run start-backend\"",
     "start-client": "webpack serve --mode development",
