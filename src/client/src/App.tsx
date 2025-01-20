@@ -1,6 +1,6 @@
 import { SyntheticEvent, useState } from 'react';
-import ImageUploaderModal from './components/ImageUploader/ImageUploader';
-import ImageGallery from './components/ImageGallery/ImageGallery';
+import ImageUploaderModal from '../components/ImageUploader/ImageUploader';
+import ImageGallery from '../components/ImageGallery/ImageGallery';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { AppContainer, ContainTabs } from './app_styles';

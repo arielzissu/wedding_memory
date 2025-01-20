@@ -1,7 +1,7 @@
 import { jwtDecode, JwtPayload } from 'jwt-decode';
 import { Dialog, DialogTitle, DialogContent, Box } from '@mui/material';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import { saveToLocalStorage } from '../../utils/localStorage';
+import { saveToLocalStorage } from '../../src/utils/localStorage';
 
 export const USER_EMAIL_KEY = 'userEmail';
 const clientId = process.env.GOOGLE_CLIENT_ID;

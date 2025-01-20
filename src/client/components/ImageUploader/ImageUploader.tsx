@@ -14,8 +14,8 @@ import {
 } from './ImageUploader.styles';
 import { deleteImage, getImages, uploadImages } from '../../api/cloudinary';
 import { ICloudinaryFile } from '../../types';
-import { getUrlSearchParams } from '../../utils/navigation';
-import { getFromLocalStorage } from '../../utils/localStorage';
+import { getUrlSearchParams } from '../../src/utils/navigation';
+import { getFromLocalStorage } from '../../src/utils/localStorage';
 import LoginModal, { USER_EMAIL_KEY } from '../Login/Login';
 
 const MAX_SIZE_IN_BYTES = 0.5 * 1024 * 1024 * 1024; // = 0.5 GB

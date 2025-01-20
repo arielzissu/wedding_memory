@@ -1,6 +1,6 @@
 import { ResourceType } from 'cloudinary';
 import { ICloudinaryFile } from '../../types';
-import { request } from '../../utils/api';
+import { request } from '../../src/utils/api';
 
 export const getImages = async (
   relevantFile: string,

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Box, CircularProgress } from '@mui/material';
 import { fetchHello, getImages } from '../../api/cloudinary';
 import { ICloudinaryFile } from '../../types';
-import { getUrlSearchParams } from '../../utils/navigation';
+import { getUrlSearchParams } from '../../src/utils/navigation';
 import {
   ContainAssetsList,
   ContainImageGallery,
