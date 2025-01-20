@@ -14,7 +14,7 @@
     "lint:fix": "eslint . --fix --ext .js,.ts,.tsx",
     "build:client": "webpack --config webpack.config.js",
     "build:server": "tsc -p src/server",
-    "build": "npm run build:client && npm run build:server",
+    "build": "webpack --config webpack.config.js",
     "start": "node dist/server.ts"
   },
   "licenses": [
