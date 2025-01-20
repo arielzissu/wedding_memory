@@ -2,15 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/server/index.js",
+      "src": "src/client/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    },
+    {
+      "src": "src/server/server.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "src/server/server.ts"
+    },
+    {
       "src": "/(.*)",
-      "dest": "src/server/index.js"
+      "dest": "/public/$1"
     }
-  ],
-  "buildCommand": "npm install build"
+  ]
 }

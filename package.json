@@ -7,13 +7,15 @@
     "node": "18"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode production",
     "dev": "concurrently \"npm run start-client\" \"npm run start-backend\"",
     "start-client": "webpack serve --mode development",
     "start-backend": "nodemon src/server/index.ts",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx"
+    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx",
+    "build:client": "webpack --config webpack.config.js",
+    "build:server": "tsc -p src/server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node dist/server.ts"
   },
   "licenses": [
     {
