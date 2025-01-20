@@ -43,7 +43,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.join(__dirname, 'src/client/public'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     publicPath: '/'
   },
